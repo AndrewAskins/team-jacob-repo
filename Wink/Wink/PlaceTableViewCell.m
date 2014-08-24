@@ -43,7 +43,6 @@
     for(NSString *category in place.categories)
     {
         categories = [categories stringByAppendingString:category];
-        categories = [categories stringByAppendingString:@", "];
     }
     self.subtitle.text = categories;
     
