@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F418C1B019A8DC90006D5EEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418C1AF19A8DC90006D5EEB /* Foundation.framework */; };
+		F418C1B219A8DC90006D5EEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418C1B119A8DC90006D5EEB /* CoreGraphics.framework */; };
+		F418C1B419A8DC90006D5EEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418C1B319A8DC90006D5EEB /* UIKit.framework */; };
+		F418C1BA19A8DC90006D5EEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F418C1B819A8DC90006D5EEB /* InfoPlist.strings */; };
+		F418C1BC19A8DC90006D5EEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C1BB19A8DC90006D5EEB /* main.m */; };
+		F418C1C019A8DC90006D5EEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C1BF19A8DC90006D5EEB /* AppDelegate.m */; };
+		F418C1C219A8DC90006D5EEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F418C1C119A8DC90006D5EEB /* Images.xcassets */; };
+		F418C1C919A8DC90006D5EEB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418C1C819A8DC90006D5EEB /* XCTest.framework */; };
+		F418C1CA19A8DC90006D5EEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418C1AF19A8DC90006D5EEB /* Foundation.framework */; };
+		F418C1CB19A8DC90006D5EEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418C1B319A8DC90006D5EEB /* UIKit.framework */; };
+		F418C1D319A8DC90006D5EEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F418C1D119A8DC90006D5EEB /* InfoPlist.strings */; };
+		F418C1D519A8DC90006D5EEB /* WinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C1D419A8DC90006D5EEB /* WinkTests.m */; };
+		F418C1E119A8E15B006D5EEB /* ReviewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C1DF19A8E15B006D5EEB /* ReviewTableViewController.m */; };
+		F418C1E219A8E15B006D5EEB /* ReviewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F418C1E019A8E15B006D5EEB /* ReviewTableViewController.xib */; };
+		F418C20C19A8EAC1006D5EEB /* WNKPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C20B19A8EAC1006D5EEB /* WNKPlace.m */; };
+		F418C21119A8EBB9006D5EEB /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C21019A8EBB9006D5EEB /* NSDate+Helper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F418C21319A8EC8F006D5EEB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418C21219A8EC8F006D5EEB /* CoreLocation.framework */; };
+		F418C21619A8ED6B006D5EEB /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C21519A8ED6B006D5EEB /* SessionManager.m */; };
+		F418C22B19A8F696006D5EEB /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C21919A8F696006D5EEB /* AFHTTPClient.m */; };
+		F418C22C19A8F696006D5EEB /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C21B19A8F696006D5EEB /* AFHTTPRequestOperation.m */; };
+		F418C22D19A8F696006D5EEB /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C21D19A8F696006D5EEB /* AFImageRequestOperation.m */; };
+		F418C22E19A8F696006D5EEB /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C21F19A8F696006D5EEB /* AFJSONRequestOperation.m */; };
+		F418C22F19A8F696006D5EEB /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C22119A8F696006D5EEB /* AFNetworkActivityIndicatorManager.m */; };
+		F418C23019A8F696006D5EEB /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C22419A8F696006D5EEB /* AFPropertyListRequestOperation.m */; };
+		F418C23119A8F696006D5EEB /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C22619A8F696006D5EEB /* AFURLConnectionOperation.m */; };
+		F418C23219A8F696006D5EEB /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C22819A8F696006D5EEB /* AFXMLRequestOperation.m */; };
+		F418C23319A8F696006D5EEB /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C22A19A8F696006D5EEB /* UIImageView+AFNetworking.m */; };
+		F418C23619A8FE7F006D5EEB /* WNKWinkApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C23519A8FE7F006D5EEB /* WNKWinkApiClient.m */; };
+		F418C23A19A91496006D5EEB /* PlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C23819A91496006D5EEB /* PlaceTableViewCell.m */; };
+		F418C23B19A91496006D5EEB /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F418C23919A91496006D5EEB /* PlaceTableViewCell.xib */; };
+		F418C23E19A9206A006D5EEB /* ZWEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = F418C23D19A9206A006D5EEB /* ZWEmoji.m */; };
+		F483554719A92F8E001D08D7 /* SingleReviewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F483554519A92F8E001D08D7 /* SingleReviewTableViewController.m */; };
+		F483554819A92F8E001D08D7 /* SingleReviewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F483554619A92F8E001D08D7 /* SingleReviewTableViewController.xib */; };
+		F483554C19A930C1001D08D7 /* ReviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F483554A19A930C1001D08D7 /* ReviewTableViewCell.m */; };
+		F483554D19A930C1001D08D7 /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F483554B19A930C1001D08D7 /* ReviewTableViewCell.xib */; };
+		F483555019A93177001D08D7 /* WNKReview.m in Sources */ = {isa = PBXBuildFile; fileRef = F483554F19A93177001D08D7 /* WNKReview.m */; };
+		F483555419A93B91001D08D7 /* AddReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F483555219A93B91001D08D7 /* AddReviewViewController.m */; };
+		F483555519A93B91001D08D7 /* AddReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F483555319A93B91001D08D7 /* AddReviewViewController.xib */; };
+		F483555B19A93E40001D08D7 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F483555819A93E40001D08D7 /* TPKeyboardAvoidingScrollView.m */; };
+		F483555C19A93E40001D08D7 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F483555A19A93E40001D08D7 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		F483556219A93F71001D08D7 /* AGEmojiKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F483555F19A93F71001D08D7 /* AGEmojiKeyBoardView.m */; };
+		F483556319A93F71001D08D7 /* AGEmojiPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F483556119A93F71001D08D7 /* AGEmojiPageView.m */; };
+		F483556519A942D2001D08D7 /* EmojisList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F483556419A942D2001D08D7 /* EmojisList.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F418C1CC19A8DC90006D5EEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F418C1A419A8DC90006D5EEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F418C1AB19A8DC90006D5EEB;
+			remoteInfo = Wink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F418C1AC19A8DC90006D5EEB /* Wink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F418C1AF19A8DC90006D5EEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F418C1B119A8DC90006D5EEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F418C1B319A8DC90006D5EEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F418C1B719A8DC90006D5EEB /* Wink-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wink-Info.plist"; sourceTree = "<group>"; };
+		F418C1B919A8DC90006D5EEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F418C1BB19A8DC90006D5EEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F418C1BD19A8DC90006D5EEB /* Wink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wink-Prefix.pch"; sourceTree = "<group>"; };
+		F418C1BE19A8DC90006D5EEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F418C1BF19A8DC90006D5EEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F418C1C119A8DC90006D5EEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F418C1C719A8DC90006D5EEB /* WinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F418C1C819A8DC90006D5EEB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F418C1D019A8DC90006D5EEB /* WinkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WinkTests-Info.plist"; sourceTree = "<group>"; };
+		F418C1D219A8DC90006D5EEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F418C1D419A8DC90006D5EEB /* WinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WinkTests.m; sourceTree = "<group>"; };
+		F418C1DE19A8E15B006D5EEB /* ReviewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewTableViewController.h; sourceTree = "<group>"; };
+		F418C1DF19A8E15B006D5EEB /* ReviewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewTableViewController.m; sourceTree = "<group>"; };
+		F418C1E019A8E15B006D5EEB /* ReviewTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewTableViewController.xib; sourceTree = "<group>"; };
+		F418C1E819A8E1F2006D5EEB /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		F418C20A19A8EAC1006D5EEB /* WNKPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNKPlace.h; sourceTree = "<group>"; };
+		F418C20B19A8EAC1006D5EEB /* WNKPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNKPlace.m; sourceTree = "<group>"; };
+		F418C20F19A8EBB9006D5EEB /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		F418C21019A8EBB9006D5EEB /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		F418C21219A8EC8F006D5EEB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F418C21419A8ED6B006D5EEB /* SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
+		F418C21519A8ED6B006D5EEB /* SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionManager.m; sourceTree = "<group>"; };
+		F418C21819A8F696006D5EEB /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		F418C21919A8F696006D5EEB /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		F418C21A19A8F696006D5EEB /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		F418C21B19A8F696006D5EEB /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		F418C21C19A8F696006D5EEB /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		F418C21D19A8F696006D5EEB /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		F418C21E19A8F696006D5EEB /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		F418C21F19A8F696006D5EEB /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		F418C22019A8F696006D5EEB /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		F418C22119A8F696006D5EEB /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		F418C22219A8F696006D5EEB /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		F418C22319A8F696006D5EEB /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		F418C22419A8F696006D5EEB /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		F418C22519A8F696006D5EEB /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		F418C22619A8F696006D5EEB /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		F418C22719A8F696006D5EEB /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		F418C22819A8F696006D5EEB /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		F418C22919A8F696006D5EEB /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		F418C22A19A8F696006D5EEB /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		F418C23419A8FE7F006D5EEB /* WNKWinkApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNKWinkApiClient.h; sourceTree = "<group>"; };
+		F418C23519A8FE7F006D5EEB /* WNKWinkApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNKWinkApiClient.m; sourceTree = "<group>"; };
+		F418C23719A91496006D5EEB /* PlaceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceTableViewCell.h; sourceTree = "<group>"; };
+		F418C23819A91496006D5EEB /* PlaceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceTableViewCell.m; sourceTree = "<group>"; };
+		F418C23919A91496006D5EEB /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		F418C23C19A9206A006D5EEB /* ZWEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWEmoji.h; sourceTree = "<group>"; };
+		F418C23D19A9206A006D5EEB /* ZWEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWEmoji.m; sourceTree = "<group>"; };
+		F483554419A92F8E001D08D7 /* SingleReviewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleReviewTableViewController.h; sourceTree = "<group>"; };
+		F483554519A92F8E001D08D7 /* SingleReviewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleReviewTableViewController.m; sourceTree = "<group>"; };
+		F483554619A92F8E001D08D7 /* SingleReviewTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleReviewTableViewController.xib; sourceTree = "<group>"; };
+		F483554919A930C1001D08D7 /* ReviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewTableViewCell.h; sourceTree = "<group>"; };
+		F483554A19A930C1001D08D7 /* ReviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewTableViewCell.m; sourceTree = "<group>"; };
+		F483554B19A930C1001D08D7 /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		F483554E19A93177001D08D7 /* WNKReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNKReview.h; sourceTree = "<group>"; };
+		F483554F19A93177001D08D7 /* WNKReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNKReview.m; sourceTree = "<group>"; };
+		F483555119A93B91001D08D7 /* AddReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReviewViewController.h; sourceTree = "<group>"; };
+		F483555219A93B91001D08D7 /* AddReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReviewViewController.m; sourceTree = "<group>"; };
+		F483555319A93B91001D08D7 /* AddReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddReviewViewController.xib; sourceTree = "<group>"; };
+		F483555719A93E40001D08D7 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		F483555819A93E40001D08D7 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		F483555919A93E40001D08D7 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		F483555A19A93E40001D08D7 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		F483555E19A93F71001D08D7 /* AGEmojiKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGEmojiKeyBoardView.h; sourceTree = "<group>"; };
+		F483555F19A93F71001D08D7 /* AGEmojiKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGEmojiKeyBoardView.m; sourceTree = "<group>"; };
+		F483556019A93F71001D08D7 /* AGEmojiPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGEmojiPageView.h; sourceTree = "<group>"; };
+		F483556119A93F71001D08D7 /* AGEmojiPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGEmojiPageView.m; sourceTree = "<group>"; };
+		F483556419A942D2001D08D7 /* EmojisList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EmojisList.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F418C1A919A8DC90006D5EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F418C21319A8EC8F006D5EEB /* CoreLocation.framework in Frameworks */,
+				F418C1B219A8DC90006D5EEB /* CoreGraphics.framework in Frameworks */,
+				F418C1B419A8DC90006D5EEB /* UIKit.framework in Frameworks */,
+				F418C1B019A8DC90006D5EEB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F418C1C419A8DC90006D5EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F418C1C919A8DC90006D5EEB /* XCTest.framework in Frameworks */,
+				F418C1CB19A8DC90006D5EEB /* UIKit.framework in Frameworks */,
+				F418C1CA19A8DC90006D5EEB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F418C1A319A8DC90006D5EEB = {
+			isa = PBXGroup;
+			children = (
+				F418C1B519A8DC90006D5EEB /* Wink */,
+				F418C1CE19A8DC90006D5EEB /* WinkTests */,
+				F418C1AE19A8DC90006D5EEB /* Frameworks */,
+				F418C1AD19A8DC90006D5EEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F418C1AD19A8DC90006D5EEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F418C1AC19A8DC90006D5EEB /* Wink.app */,
+				F418C1C719A8DC90006D5EEB /* WinkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F418C1AE19A8DC90006D5EEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F418C21219A8EC8F006D5EEB /* CoreLocation.framework */,
+				F418C1AF19A8DC90006D5EEB /* Foundation.framework */,
+				F418C1B119A8DC90006D5EEB /* CoreGraphics.framework */,
+				F418C1B319A8DC90006D5EEB /* UIKit.framework */,
+				F418C1C819A8DC90006D5EEB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F418C1B519A8DC90006D5EEB /* Wink */ = {
+			isa = PBXGroup;
+			children = (
+				F418C1BE19A8DC90006D5EEB /* AppDelegate.h */,
+				F418C1BF19A8DC90006D5EEB /* AppDelegate.m */,
+				F418C20D19A8EB64006D5EEB /* Libraries */,
+				F418C20E19A8EB6B006D5EEB /* UserInterface */,
+				F418C20619A8E9F7006D5EEB /* Session */,
+				F418C1C119A8DC90006D5EEB /* Images.xcassets */,
+				F418C1B619A8DC90006D5EEB /* Supporting Files */,
+			);
+			path = Wink;
+			sourceTree = "<group>";
+		};
+		F418C1B619A8DC90006D5EEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F483556419A942D2001D08D7 /* EmojisList.plist */,
+				F418C1B719A8DC90006D5EEB /* Wink-Info.plist */,
+				F418C1B819A8DC90006D5EEB /* InfoPlist.strings */,
+				F418C1BB19A8DC90006D5EEB /* main.m */,
+				F418C1BD19A8DC90006D5EEB /* Wink-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F418C1CE19A8DC90006D5EEB /* WinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				F418C1D419A8DC90006D5EEB /* WinkTests.m */,
+				F418C1CF19A8DC90006D5EEB /* Supporting Files */,
+			);
+			path = WinkTests;
+			sourceTree = "<group>";
+		};
+		F418C1CF19A8DC90006D5EEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F418C1D019A8DC90006D5EEB /* WinkTests-Info.plist */,
+				F418C1D119A8DC90006D5EEB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F418C20619A8E9F7006D5EEB /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				F418C20A19A8EAC1006D5EEB /* WNKPlace.h */,
+				F418C20B19A8EAC1006D5EEB /* WNKPlace.m */,
+				F483554E19A93177001D08D7 /* WNKReview.h */,
+				F483554F19A93177001D08D7 /* WNKReview.m */,
+				F418C23419A8FE7F006D5EEB /* WNKWinkApiClient.h */,
+				F418C23519A8FE7F006D5EEB /* WNKWinkApiClient.m */,
+				F418C21419A8ED6B006D5EEB /* SessionManager.h */,
+				F418C21519A8ED6B006D5EEB /* SessionManager.m */,
+			);
+			name = Session;
+			sourceTree = "<group>";
+		};
+		F418C20D19A8EB64006D5EEB /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F483555D19A93F71001D08D7 /* AGEmojiKeyboard */,
+				F418C21719A8F696006D5EEB /* AFNetworking */,
+				F418C20F19A8EBB9006D5EEB /* NSDate+Helper.h */,
+				F418C21019A8EBB9006D5EEB /* NSDate+Helper.m */,
+				F418C1E819A8E1F2006D5EEB /* Macros.h */,
+				F418C23C19A9206A006D5EEB /* ZWEmoji.h */,
+				F418C23D19A9206A006D5EEB /* ZWEmoji.m */,
+				F483555619A93E2F001D08D7 /* KeyboardAvoidingViews */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		F418C20E19A8EB6B006D5EEB /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				F418C1DE19A8E15B006D5EEB /* ReviewTableViewController.h */,
+				F418C1DF19A8E15B006D5EEB /* ReviewTableViewController.m */,
+				F418C1E019A8E15B006D5EEB /* ReviewTableViewController.xib */,
+				F418C23719A91496006D5EEB /* PlaceTableViewCell.h */,
+				F418C23819A91496006D5EEB /* PlaceTableViewCell.m */,
+				F418C23919A91496006D5EEB /* PlaceTableViewCell.xib */,
+				F483554919A930C1001D08D7 /* ReviewTableViewCell.h */,
+				F483554A19A930C1001D08D7 /* ReviewTableViewCell.m */,
+				F483554B19A930C1001D08D7 /* ReviewTableViewCell.xib */,
+				F483554419A92F8E001D08D7 /* SingleReviewTableViewController.h */,
+				F483554519A92F8E001D08D7 /* SingleReviewTableViewController.m */,
+				F483554619A92F8E001D08D7 /* SingleReviewTableViewController.xib */,
+				F483555119A93B91001D08D7 /* AddReviewViewController.h */,
+				F483555219A93B91001D08D7 /* AddReviewViewController.m */,
+				F483555319A93B91001D08D7 /* AddReviewViewController.xib */,
+			);
+			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		F418C21719A8F696006D5EEB /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F418C21819A8F696006D5EEB /* AFHTTPClient.h */,
+				F418C21919A8F696006D5EEB /* AFHTTPClient.m */,
+				F418C21A19A8F696006D5EEB /* AFHTTPRequestOperation.h */,
+				F418C21B19A8F696006D5EEB /* AFHTTPRequestOperation.m */,
+				F418C21C19A8F696006D5EEB /* AFImageRequestOperation.h */,
+				F418C21D19A8F696006D5EEB /* AFImageRequestOperation.m */,
+				F418C21E19A8F696006D5EEB /* AFJSONRequestOperation.h */,
+				F418C21F19A8F696006D5EEB /* AFJSONRequestOperation.m */,
+				F418C22019A8F696006D5EEB /* AFNetworkActivityIndicatorManager.h */,
+				F418C22119A8F696006D5EEB /* AFNetworkActivityIndicatorManager.m */,
+				F418C22219A8F696006D5EEB /* AFNetworking.h */,
+				F418C22319A8F696006D5EEB /* AFPropertyListRequestOperation.h */,
+				F418C22419A8F696006D5EEB /* AFPropertyListRequestOperation.m */,
+				F418C22519A8F696006D5EEB /* AFURLConnectionOperation.h */,
+				F418C22619A8F696006D5EEB /* AFURLConnectionOperation.m */,
+				F418C22719A8F696006D5EEB /* AFXMLRequestOperation.h */,
+				F418C22819A8F696006D5EEB /* AFXMLRequestOperation.m */,
+				F418C22919A8F696006D5EEB /* UIImageView+AFNetworking.h */,
+				F418C22A19A8F696006D5EEB /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		F483555619A93E2F001D08D7 /* KeyboardAvoidingViews */ = {
+			isa = PBXGroup;
+			children = (
+				F483555719A93E40001D08D7 /* TPKeyboardAvoidingScrollView.h */,
+				F483555819A93E40001D08D7 /* TPKeyboardAvoidingScrollView.m */,
+				F483555919A93E40001D08D7 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				F483555A19A93E40001D08D7 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = KeyboardAvoidingViews;
+			sourceTree = "<group>";
+		};
+		F483555D19A93F71001D08D7 /* AGEmojiKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F483555E19A93F71001D08D7 /* AGEmojiKeyBoardView.h */,
+				F483555F19A93F71001D08D7 /* AGEmojiKeyBoardView.m */,
+				F483556019A93F71001D08D7 /* AGEmojiPageView.h */,
+				F483556119A93F71001D08D7 /* AGEmojiPageView.m */,
+			);
+			path = AGEmojiKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F418C1AB19A8DC90006D5EEB /* Wink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F418C1D819A8DC90006D5EEB /* Build configuration list for PBXNativeTarget "Wink" */;
+			buildPhases = (
+				F418C1A819A8DC90006D5EEB /* Sources */,
+				F418C1A919A8DC90006D5EEB /* Frameworks */,
+				F418C1AA19A8DC90006D5EEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wink;
+			productName = Wink;
+			productReference = F418C1AC19A8DC90006D5EEB /* Wink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F418C1C619A8DC90006D5EEB /* WinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F418C1DB19A8DC90006D5EEB /* Build configuration list for PBXNativeTarget "WinkTests" */;
+			buildPhases = (
+				F418C1C319A8DC90006D5EEB /* Sources */,
+				F418C1C419A8DC90006D5EEB /* Frameworks */,
+				F418C1C519A8DC90006D5EEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F418C1CD19A8DC90006D5EEB /* PBXTargetDependency */,
+			);
+			name = WinkTests;
+			productName = WinkTests;
+			productReference = F418C1C719A8DC90006D5EEB /* WinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F418C1A419A8DC90006D5EEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Wink App";
+				TargetAttributes = {
+					F418C1AB19A8DC90006D5EEB = {
+						DevelopmentTeam = PKQ6999SKU;
+					};
+					F418C1C619A8DC90006D5EEB = {
+						TestTargetID = F418C1AB19A8DC90006D5EEB;
+					};
+				};
+			};
+			buildConfigurationList = F418C1A719A8DC90006D5EEB /* Build configuration list for PBXProject "Wink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F418C1A319A8DC90006D5EEB;
+			productRefGroup = F418C1AD19A8DC90006D5EEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F418C1AB19A8DC90006D5EEB /* Wink */,
+				F418C1C619A8DC90006D5EEB /* WinkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F418C1AA19A8DC90006D5EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F483554819A92F8E001D08D7 /* SingleReviewTableViewController.xib in Resources */,
+				F418C1BA19A8DC90006D5EEB /* InfoPlist.strings in Resources */,
+				F418C1E219A8E15B006D5EEB /* ReviewTableViewController.xib in Resources */,
+				F483554D19A930C1001D08D7 /* ReviewTableViewCell.xib in Resources */,
+				F483555519A93B91001D08D7 /* AddReviewViewController.xib in Resources */,
+				F483556519A942D2001D08D7 /* EmojisList.plist in Resources */,
+				F418C23B19A91496006D5EEB /* PlaceTableViewCell.xib in Resources */,
+				F418C1C219A8DC90006D5EEB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F418C1C519A8DC90006D5EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F418C1D319A8DC90006D5EEB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F418C1A819A8DC90006D5EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F483555419A93B91001D08D7 /* AddReviewViewController.m in Sources */,
+				F483555019A93177001D08D7 /* WNKReview.m in Sources */,
+				F418C23119A8F696006D5EEB /* AFURLConnectionOperation.m in Sources */,
+				F418C23219A8F696006D5EEB /* AFXMLRequestOperation.m in Sources */,
+				F418C22E19A8F696006D5EEB /* AFJSONRequestOperation.m in Sources */,
+				F418C22C19A8F696006D5EEB /* AFHTTPRequestOperation.m in Sources */,
+				F418C1C019A8DC90006D5EEB /* AppDelegate.m in Sources */,
+				F418C23619A8FE7F006D5EEB /* WNKWinkApiClient.m in Sources */,
+				F418C1BC19A8DC90006D5EEB /* main.m in Sources */,
+				F418C20C19A8EAC1006D5EEB /* WNKPlace.m in Sources */,
+				F418C21119A8EBB9006D5EEB /* NSDate+Helper.m in Sources */,
+				F418C22D19A8F696006D5EEB /* AFImageRequestOperation.m in Sources */,
+				F483554719A92F8E001D08D7 /* SingleReviewTableViewController.m in Sources */,
+				F483555C19A93E40001D08D7 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				F418C23A19A91496006D5EEB /* PlaceTableViewCell.m in Sources */,
+				F418C23E19A9206A006D5EEB /* ZWEmoji.m in Sources */,
+				F483556319A93F71001D08D7 /* AGEmojiPageView.m in Sources */,
+				F418C22F19A8F696006D5EEB /* AFNetworkActivityIndicatorManager.m in Sources */,
+				F418C23319A8F696006D5EEB /* UIImageView+AFNetworking.m in Sources */,
+				F418C21619A8ED6B006D5EEB /* SessionManager.m in Sources */,
+				F418C1E119A8E15B006D5EEB /* ReviewTableViewController.m in Sources */,
+				F483556219A93F71001D08D7 /* AGEmojiKeyBoardView.m in Sources */,
+				F483554C19A930C1001D08D7 /* ReviewTableViewCell.m in Sources */,
+				F418C22B19A8F696006D5EEB /* AFHTTPClient.m in Sources */,
+				F483555B19A93E40001D08D7 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				F418C23019A8F696006D5EEB /* AFPropertyListRequestOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F418C1C319A8DC90006D5EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F418C1D519A8DC90006D5EEB /* WinkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F418C1CD19A8DC90006D5EEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F418C1AB19A8DC90006D5EEB /* Wink */;
+			targetProxy = F418C1CC19A8DC90006D5EEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F418C1B819A8DC90006D5EEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F418C1B919A8DC90006D5EEB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F418C1D119A8DC90006D5EEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F418C1D219A8DC90006D5EEB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F418C1D619A8DC90006D5EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F418C1D719A8DC90006D5EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F418C1D919A8DC90006D5EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wink/Wink-Prefix.pch";
+				INFOPLIST_FILE = "Wink/Wink-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F418C1DA19A8DC90006D5EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wink/Wink-Prefix.pch";
+				INFOPLIST_FILE = "Wink/Wink-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F418C1DC19A8DC90006D5EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wink.app/Wink";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wink/Wink-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WinkTests/WinkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F418C1DD19A8DC90006D5EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wink.app/Wink";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wink/Wink-Prefix.pch";
+				INFOPLIST_FILE = "WinkTests/WinkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F418C1A719A8DC90006D5EEB /* Build configuration list for PBXProject "Wink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F418C1D619A8DC90006D5EEB /* Debug */,
+				F418C1D719A8DC90006D5EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F418C1D819A8DC90006D5EEB /* Build configuration list for PBXNativeTarget "Wink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F418C1D919A8DC90006D5EEB /* Debug */,
+				F418C1DA19A8DC90006D5EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F418C1DB19A8DC90006D5EEB /* Build configuration list for PBXNativeTarget "WinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F418C1DC19A8DC90006D5EEB /* Debug */,
+				F418C1DD19A8DC90006D5EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F418C1A419A8DC90006D5EEB /* Project object */;
+}
